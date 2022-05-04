@@ -24,16 +24,13 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <form>
-    <div class="my-5">
-      <button
-        type="button"
-        @click="submitForm"
-        class="btn btn-sm btn-primary"
-      >
-       Mark as in Progress
-      </button>
-    </div>
-  </form>
+  <div class="mb-3">
+    <label class="form-label">Short Comment</label
+    ><textarea type="text" class="form-control" rows="5"></textarea>
+  </div>
+  <div class="my-5 float-end">
+    <button type="submit" class="btn btn-danger mx-2">Reject</button>
+    <button type="submit" class="btn btn-success">Approve</button>
+  </div>
 </template>
 
